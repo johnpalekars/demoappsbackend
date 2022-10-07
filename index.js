@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 const io = new Server(server, {
   cors: {
-    origin: "https://zoro-to.herokuapp.com/",
+    origin: "https://zoro-to.herokuapp.com",
     methods: ["GET", "POST", "PUT"],
   },
 });
