@@ -9,7 +9,7 @@ require("dotenv").config();
 const harperSaveMessage = require("./services/harper-save-message");
 const harperGetMessages = require("./services/harper-get-messages");
 
-const PORT = 4000;
+const PORT = process.env.PORT;
 const app = express();
 app.use(cors());
 const server = http.createServer(app);
